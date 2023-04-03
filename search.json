@@ -1,0 +1,9 @@
+[
+  {
+    "objectID": "attention.html",
+    "href": "attention.html",
+    "title": "Attention",
+    "section": "",
+    "text": "source\n\nAttention\n\n Attention (query_dim:int, key_dim:int, value_dim:int, dropout:float=0.1)\n\nBase class for all neural network modules.\nYour models should also subclass this class.\nModules can also contain other Modules, allowing to nest them in a tree structure. You can assign the submodules as regular attributes::\nimport torch.nn as nn\nimport torch.nn.functional as F\n\nclass Model(nn.Module):\n    def __init__(self):\n        super().__init__()\n        self.conv1 = nn.Conv2d(1, 20, 5)\n        self.conv2 = nn.Conv2d(20, 20, 5)\n\n    def forward(self, x):\n        x = F.relu(self.conv1(x))\n        return F.relu(self.conv2(x))\nSubmodules assigned in this way will be registered, and will have their parameters converted too when you call :meth:to, etc.\n.. note:: As per the example above, an __init__() call to the parent class must be made before assignment on the child.\n:ivar training: Boolean represents whether this module is in training or evaluation mode. :vartype training: bool"
+  }
+]
