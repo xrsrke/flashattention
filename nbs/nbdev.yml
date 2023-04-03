@@ -1,0 +1,9 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "flashattention"
+  site-url: "https://xrsrke.github.io/flashattention"
+  description: "Implementation of FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness"
+  repo-branch: main
+  repo-url: "https://github.com/xrsrke/flashattention"
